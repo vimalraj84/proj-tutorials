@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: zoo-wage-service
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+      discovery:
+        enabled: true
+  jpa:
+    show-sql: true
+  h2: 
+    console:
+      enabled: true
+server:
+  port: 9000
+  
+#endpoints:
+#  restart:
+#    enabled: true
+    
+logging:
+  level:
+    org.apache.zookeeper.ClientCnxn: INFO
