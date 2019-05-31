@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class StringParsing {
+public class Parsing {
 
 	public static void main(String[] args) {
 		String input = "Alexa";

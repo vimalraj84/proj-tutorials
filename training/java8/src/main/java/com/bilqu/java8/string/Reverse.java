@@ -1,6 +1,6 @@
 package com.bilqu.java8.string;
 
-public class ReverseString {
+public class Reverse {
 
 	public static void main(String[] args) {
 		String input = "Laptop";

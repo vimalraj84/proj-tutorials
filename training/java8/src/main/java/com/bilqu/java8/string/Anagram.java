@@ -2,7 +2,7 @@ package com.bilqu.java8.string;
 
 import java.util.Arrays;
 
-public class StringAnagram {
+public class Anagram {
 
 	public static void main(String[] args) {
 		String input = "Cinema"; // Peels

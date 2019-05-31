@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class Stack<T> {
 
 	private int top;
-	private int cap;
+	private int cap;//Capacity
 	private T[] stack;
 	
 	

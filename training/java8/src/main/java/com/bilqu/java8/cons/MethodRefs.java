@@ -30,7 +30,13 @@ public class MethodRefs {
 
         getEmpData();
 
+        EmpIdFactory<EmpId> empIdFactory = EmpId::new;
+        EmpId empId =  empIdFactory.create(1234,123456789);
+        System.out.println("Emp Id from Method Ref : "+empId);
+    }
 
+    interface EmpIdFactory<T extends  EmpId>{
+        T create(int id, long ssn);
     }
 
     public static Map<EmpId, Employee> getEmpData(){

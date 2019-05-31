@@ -35,7 +35,6 @@ public class DateApiTest {
         LocalDateTime localDateTime = LocalDateTime.now();
         System.out.println(localDateTime);
 
-
         // If you want to use the date functionality with zone information OffsetTime and OffsetDateTime
         OffsetDateTime offsetDateTime = OffsetDateTime.now(ZoneId.of("Asia/Kolkata"));
         System.out.println(offsetDateTime);
