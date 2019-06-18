@@ -30,6 +30,9 @@ class BinaryTreeTest {
 		binaryTree.addNode(binaryTree.getRoot(),9);
 		binaryTree.addNode(binaryTree.getRoot(),1);
 		binaryTree.addNode(binaryTree.getRoot(),3);
+		binaryTree.addNode(binaryTree.getRoot(),1);
+		binaryTree.addNode(binaryTree.getRoot(),1);
+		binaryTree.addNode(binaryTree.getRoot(),1);
 	}
 
 	@Test

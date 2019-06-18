@@ -52,4 +52,21 @@ public class BinaryTree<T> {
 	public void print() {
 		TreePrinter.printNode(root);
 	}
+
+
+	public static void main(String[] a){
+		BinaryTree<Integer> binaryTree = new BinaryTree(5);
+		binaryTree.addNode(binaryTree.getRoot(),4);
+		binaryTree.addNode(binaryTree.getRoot(),6);
+		binaryTree.addNode(binaryTree.getRoot(),8);
+		binaryTree.addNode(binaryTree.getRoot(),2);
+		binaryTree.addNode(binaryTree.getRoot(),9);
+		binaryTree.addNode(binaryTree.getRoot(),1);
+		binaryTree.addNode(binaryTree.getRoot(),3);
+		binaryTree.addNode(binaryTree.getRoot(),1);
+		binaryTree.addNode(binaryTree.getRoot(),1);
+		binaryTree.addNode(binaryTree.getRoot(),1);
+
+		binaryTree.print();
+	}
 }
