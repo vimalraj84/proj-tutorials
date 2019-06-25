@@ -30,7 +30,8 @@
 		<module>proj-spring-cloud-netflix/ms-wage-service</module>
 		<module>proj-spring-cloud-zookeeper/ms-zookeeper-wage-determine-service</module>
 		<module>proj-spring-cloud-zookeeper/ms-zookeeper-wage-service</module>
-	</modules>
+                <module>proj-docker/sb-docker</module>
+    </modules>
 
 
 	<dependencies>
