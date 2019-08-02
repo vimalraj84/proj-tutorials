@@ -16,13 +16,13 @@ public class DesktopAwtEx {
         ScheduledExecutorService schedThreadPool  = Executors.newScheduledThreadPool(3);
         //The following code shows how to execute a task after 100000 milliseconds delay and then repeat it every 900000 milliseconds.
         ScheduledFuture<?> sfuture = schedThreadPool.scheduleAtFixedRate(new DesktopAwtEx().new WinTaskRunn(),
-                5000,
-                9000,
+                100000,
+                900000,
                 TimeUnit.MILLISECONDS);
 
         //After scheduling the task, we wait until it fires three times using the CountDownLatch lock,
         //then cancel it using the Future.cancel() method
-        CountDownLatch lock = new CountDownLatch(3);
+        CountDownLatch lock = new CountDownLatch(5);
         lock.await(30000, TimeUnit.MILLISECONDS);
         sfuture.cancel(true);
         System.out.format("Robot Stopped %s \n",LocalDateTime.now());
@@ -41,8 +41,8 @@ public class DesktopAwtEx {
 //            launchSkype();
 //            moveMouse();
 //            launchNote();
-//            moveMouse();
-            launchCmd();
+            moveMouse();
+//            launchCmd();
         }
 
         private void launchSkype(){
