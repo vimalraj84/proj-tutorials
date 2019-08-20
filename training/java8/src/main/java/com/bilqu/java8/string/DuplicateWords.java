@@ -14,7 +14,7 @@ public class DuplicateWords {
 //\1: match the word remembered in step 2;
 //\b: like in step 1 – make sure it’s not a part of some longer word;
 //(\s+\1\b)+: match one or more occurrences of the word captured in step 2.
-        String regex = "\\b(\\w+)(\\s+\\1)\\b";
+        String regex = "\\b(\\w+)(\\s+\\1)+\\b";
 //        String regex = "\\b(\\w+)(\\s+\\1\\b)+";
         Pattern p = Pattern.compile(regex,java.util.regex.Pattern.CASE_INSENSITIVE);
 
@@ -33,7 +33,7 @@ public class DuplicateWords {
 
             // Check for subsequences of input that match the compiled pattern
             while (m.find()) {
-                input = input.replaceAll(regex, "");
+                input = input.replaceAll(m.group(0), m.group(1));
             }
 
             // Prints the modified sentence.

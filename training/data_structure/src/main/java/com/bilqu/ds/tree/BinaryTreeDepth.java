@@ -25,7 +25,6 @@ public class BinaryTreeDepth {
 
         int depth = 0;
 
-        binaryTree.
 
 
         return depth;
