@@ -14,7 +14,7 @@ public class ImplRunnable {
 			
 			@Override
 			public void run() {
-				System.out.println("After Implementing Runnable as Annonymous Inner Class");
+				System.out.println("After Implementing Runnable as Anonymous Inner Class");
 				
 			}
 		}).start();

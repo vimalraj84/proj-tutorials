@@ -1,4 +1,4 @@
-package com.bilqu.java8.math;
+package com.bilqu.java8.challenge;
 
 import java.io.IOException;
 import java.util.Scanner;

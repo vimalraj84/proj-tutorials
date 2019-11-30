@@ -1,4 +1,4 @@
-package com.bilqu.java8.concur;
+package com.bilqu.java8.perform;
 
 public class LoadTest {
 

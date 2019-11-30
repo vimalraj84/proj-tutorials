@@ -24,13 +24,14 @@
 		<module>proj-resource-manager/resource-management</module>
 		<module>proj-spring-boot-oauth2/sb-security-auth-server</module>
 		<module>proj-spring-boot-oauth2/sb-security-auth-client</module>
+		<module>proj-spring-boot-oauth2/app-oauth2</module>
 		<module>proj-spring-cloud-netflix/ms-eureka-naming-server</module>
 		<module>proj-spring-cloud-netflix/ms-feign-wage-determine-service</module>
 		<module>proj-spring-cloud-netflix/ms-netflix-zuul</module>
 		<module>proj-spring-cloud-netflix/ms-wage-service</module>
 		<module>proj-spring-cloud-zookeeper/ms-zookeeper-wage-determine-service</module>
 		<module>proj-spring-cloud-zookeeper/ms-zookeeper-wage-service</module>
-                <module>proj-docker/sb-docker</module>
+        <module>proj-docker/sb-docker</module>        
     </modules>
 
 
