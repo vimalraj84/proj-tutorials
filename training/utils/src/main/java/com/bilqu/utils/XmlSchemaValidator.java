@@ -23,7 +23,7 @@ public class XmlSchemaValidator {
 
         Arrays.stream(ipDir.listFiles()).parallel()
                 .filter(f -> f.isFile())
-                .filter(f1 -> !f1.getName().contains("BB0XP"))
+                .filter(f1 -> !f1.getName().contains("TEST"))
                 .filter(file -> ! validateSchema(file,schemaSource))
                 .forEach(of -> System.out.format(" -> %s -> %s \n",of.getName(),new Date(of.lastModified()).toString()));
     }
