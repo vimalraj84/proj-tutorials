@@ -2,10 +2,13 @@ package com.bilqu.bo.acct;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class CheckingAccount implements Account {
-	
+
+
 	private AccountType acctTyp;
 	private Name owner;
 	private String branch;
@@ -108,13 +111,15 @@ public class CheckingAccount implements Account {
 	@Override
 	public Balance getBalance() {
 		System.out.println("Checking Account Balance");
-		return new Balance();
+		return new Balance(100_000);
 	}
 
 	@Override
 	public List<Transaction> getTransactions() {
-		// TODO Auto-generated method stub
-		return null;
+		final List<Transaction> trxn = new ArrayList<>();
+		IntStream.range(1,3).forEach(i -> trxn.add(new Transaction(1000*i,TransactionType.CREDIT)));
+		IntStream.range(1,7).forEach(i -> trxn.add(new Transaction((1000-((100*i*10)/100)),TransactionType.DEBIT)));
+		return trxn;
 	}
 
 }

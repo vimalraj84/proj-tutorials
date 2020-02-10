@@ -18,8 +18,8 @@ import java.util.*;
 public class XmlSchemaValidator {
 
     public static void main(String[] a){
-        File ipDir = new File("C:/Mule/payload/1094B_files");
-        String schemaSource = "C:\\WS_MULE_2019_03_02\\newheights-uber\\newheights-esb\\irsairsubmissionclientflows\\src\\main\\resources\\ty18\\MSG\\IRS-Form1094-1095BTransmitterUpstreamMessage.xsd";
+        File ipDir = new File("C:/Mule/payload/files");
+        String schemaSource = "C:\\src\\main\\resources\\Message.xsd";
 
         Arrays.stream(ipDir.listFiles()).parallel()
                 .filter(f -> f.isFile())

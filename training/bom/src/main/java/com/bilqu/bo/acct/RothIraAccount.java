@@ -7,7 +7,7 @@ public class RothIraAccount implements Account {
 	@Override
 	public Balance getBalance() {
 		System.out.println("ROTH Account Balance");
-		return new Balance();
+		return new Balance(100f);
 	}
 
 	@Override

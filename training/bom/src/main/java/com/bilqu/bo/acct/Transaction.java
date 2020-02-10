@@ -16,4 +16,12 @@ public class Transaction {
 	public TransactionType getType() {
 		return type;
 	}
+
+	@Override
+	public String toString() {
+		return "Transaction{" +
+				"amt=" + amt +
+				", type=" + type +
+				'}';
+	}
 }

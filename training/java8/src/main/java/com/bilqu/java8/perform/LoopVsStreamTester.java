@@ -15,7 +15,7 @@ public class LoopVsStreamTester {
 
     public static void getArrayPerformance(){
         System.out.println("\nLIST ARRAY...................");
-        int[] ip = IntStream.range(0,100000).toArray();
+        int[] ip = IntStream.range(0,100).toArray();
 
         List<Integer> out = new ArrayList<>();
         //Index
@@ -54,7 +54,7 @@ public class LoopVsStreamTester {
 
     public static void getListPerformance(){
         System.out.println("\nLIST PERFORMANCE...................");
-        List<Integer> ip = IntStream.range(0,100000).boxed().collect(Collectors.toList());
+        List<Integer> ip = IntStream.range(0,100).boxed().collect(Collectors.toList());
 
         List<Integer> out = new ArrayList<>();
 

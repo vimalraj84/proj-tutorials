@@ -1,17 +1,18 @@
 package com.bilqu.bo.acct;
 
 public class Balance {
-	
-	private float Amt;
 
-	public float getAmt() {
-		return Amt;
+	private float balAmt;
+
+	Balance(float amt){
+		balAmt = amt;
 	}
 
-	public void setAmt(float amt) {
-		Amt = amt;
+	public float getBalAmt() {
+		return balAmt;
 	}
-	
-	
 
+	public void setBalAmt(float balAmt) {
+		this.balAmt = balAmt;
+	}
 }

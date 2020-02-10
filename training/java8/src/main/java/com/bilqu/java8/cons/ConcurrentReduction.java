@@ -1,7 +1,6 @@
 package com.bilqu.java8.cons;
 
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentMap;
 import java.util.stream.Collectors;
 
@@ -18,6 +17,7 @@ public class ConcurrentReduction {
         ConcurrentMap<EmpSex, List<Employee>> output = input.entrySet().parallelStream()
                 .map(entry -> entry.getValue())
                 .collect(Collectors.groupingByConcurrent(Employee::getSex));
+
         System.out.println(output);
     }
 }
