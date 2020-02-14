@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 public class DuplicateChar {
 
     public static void main(String[] a){
-        String input = "Churacter";
+        String input = "Character";
         findDuplicate(input);
     }
 

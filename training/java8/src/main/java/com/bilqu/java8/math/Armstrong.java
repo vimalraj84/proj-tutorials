@@ -10,7 +10,7 @@ public class Armstrong {
 	}
 
 	//A number is called an Armstrong number if it is equal to the cube of its each digit. 
-	// for example, 153 is an Armstrong number because 153= 1+ 125+27 which is equal to 1^3+5^3+3^3. 
+	// for example, 153 is an Armstrong number because 153= (1+125+27) which is equal to 1^3+5^3+3^3.
 	public static boolean armstrongNum(int n) {
 		return String.valueOf(n).chars().map(i -> Character.getNumericValue(i)).map(i->(i*i*i)).sum() == n ;
 	}

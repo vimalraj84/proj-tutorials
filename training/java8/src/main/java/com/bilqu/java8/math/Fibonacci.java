@@ -18,15 +18,12 @@ public class Fibonacci {
         //Old
         long limit = 10;
         long prev,curr,next = 0;
-        long startVal = 1;
 
-        System.out.println(0);
-        System.out.println(1);
         curr = 1;
         prev = 0;
         for (int i =0; i < limit ; i++) {
+            System.out.println(prev);
             next = prev+curr;
-            System.out.println(next);
             prev = curr;
             curr = next;
         }

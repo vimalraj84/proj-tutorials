@@ -28,21 +28,20 @@ public class AddTwoLinkedListNum {
         f2.setNext(f3);
         System.out.println(f1);
 
-        System.out.println(addTwoNumbers(n1,f1));
+        System.out.println(addTwoNumbers(n1,f1,0));
     }
 
-    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2,int rem) {
         AddTwoLinkedListNum.ListNode  n1 = null;
 
         if(l1 != null && l2 != null){
             int sum = l1.val+l2.val ;
-            int rem = 0;
             n1 =  new AddTwoLinkedListNum.ListNode(rem + sum);
             if(sum > 9){
                 n1 .setVal((rem+ sum)%10);
                 rem = sum/10;
             }
-            n1.setNext(addTwoNumbers(l1.getNext(),l2.getNext()));
+            n1.setNext(addTwoNumbers(l1.getNext(),l2.getNext(),rem));
         }
         return n1;
     }

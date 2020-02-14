@@ -18,35 +18,5 @@ public class Anagram {
 		
 		
 	}
-	
-	
-	public static class Stack{
-		
-		private char[] ip;
-		
-		//Pushing (storing) an element on the stack. 
-		public void push() {
-			
-		}
-		//Removing (accessing) an element from the stack. 
-		public void pop() {
-			
-		}
-			
-		//get the top data element of the stack, without removing it. 
-		public char peek() {
-			return 0;
-		}
-			
-		//check if stack is full. 
-		public boolean isFull() {
-			return false;
-			
-		}
-			
-		public boolean isEmpty() {
-			return false;
-		}
-	}
 }
 
