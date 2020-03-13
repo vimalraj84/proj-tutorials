@@ -42,6 +42,12 @@ public class MissingNumber {
 
         List<Integer> output =  Arrays.stream(ip).boxed().collect(Collectors.toList());
 
+
+
+        if (output.stream() != null) {
+
+        }
+
         int counter = 0;
         int itrCnt = ipLen - ip.length;
 
