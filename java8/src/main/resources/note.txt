@@ -1,0 +1,4 @@
+1.  Spring Boot
+2.  Swagger for building REST API - check it out
+3.  REST with Jersey, Spring and Apex Rest for salesforce no a java
+4.
