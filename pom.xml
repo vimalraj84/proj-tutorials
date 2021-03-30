@@ -5,12 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bilqu</groupId>
 	<artifactId>proj-training</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		
 		<junit.version>5.4.1</junit.version>
 		<log4j2.version>2.11.0</log4j2.version>
 		<log4j2.version>2.11.0</log4j2.version>
@@ -19,19 +18,14 @@
 	</properties>
 
 	<modules>
-		<module>training</module>	
-		<module>proj-spring-boot-hibernate/sb-hibernate</module>
-		<module>proj-resource-manager/resource-management</module>
-		<module>proj-spring-boot-oauth2/sb-security-auth-server</module>
-		<module>proj-spring-boot-oauth2/sb-security-auth-client</module>
-		<module>proj-spring-boot-oauth2/app-oauth2</module>
-		<module>proj-spring-cloud-netflix/ms-eureka-naming-server</module>
-		<module>proj-spring-cloud-netflix/ms-feign-wage-determine-service</module>
-		<module>proj-spring-cloud-netflix/ms-netflix-zuul</module>
-		<module>proj-spring-cloud-netflix/ms-wage-service</module>
-		<module>proj-spring-cloud-zookeeper/ms-zookeeper-wage-determine-service</module>
-		<module>proj-spring-cloud-zookeeper/ms-zookeeper-wage-service</module>
-        <module>proj-docker/sb-docker</module>        
+		<module>bom</module>
+		<module>java8</module>
+		<module>spring-boot-ho</module>
+		<module>design-pattern</module>
+		<module>poi</module>
+		<module>data_structure</module>
+		<module>utils</module>	
+		      
     </modules>
 
 
@@ -43,6 +37,23 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.0</version>
+					<configuration>
+						<release>11</release>
+						<compilerArgs>--enable-preview</compilerArgs>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
 
 
 </project>
